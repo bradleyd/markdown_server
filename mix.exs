@@ -20,7 +20,8 @@ defmodule MarkdownServer.Mixfile do
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
     [
-      { :ex_doc, github: "elixir-lang/ex_doc" }
+      { :ex_doc, github: "elixir-lang/ex_doc" },
+      { :phoenix, github: "chrismccord/phoenix" }
     ]
   end
 end
