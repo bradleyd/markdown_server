@@ -21,7 +21,8 @@ defmodule MarkdownServer.Mixfile do
   defp deps do
     [
       { :ex_doc, github: "elixir-lang/ex_doc" },
-      { :phoenix, github: "chrismccord/phoenix" }
+      { :phoenix, github: "chrismccord/phoenix" },
+      {:hackney, github: "benoitc/hackney"}
     ]
   end
 end
