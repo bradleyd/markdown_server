@@ -13,5 +13,11 @@ defmodule MarkdownServer.RendererTest do
    expected_title = "This is a title"
    assert expected_title == rendered_document.title 
   end
+
+  test "renders markdown documents from files" do
+    rendered_document = MarkdownServer.Renderer.render("./test/support/sample_files/basic.md")
+    expected_body = "<p>This is a basic doc</p>\n"
+    assert MarkdownServer.RenderedDocument[body: expected_body] == rendered_document 
+  end
   
 end

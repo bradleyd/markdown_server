@@ -10,8 +10,12 @@ defmodule MarkdownServer.PagesController do
    alias MarkdownServer.Renderer
 
    def show(conn) do
-     document = Renderer.render_string("this is a doc")
+     document = conn |> requested_file |> Renderer.render 
      html(conn, html_for(document)) 
+   end
+
+   defp requested_file(conn) do
+     "./test/support/sample_files/#{conn.params["page"]}" 
    end
 
    defp html_for(rendered_document) do

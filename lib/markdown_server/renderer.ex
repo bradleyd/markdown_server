@@ -6,6 +6,11 @@ defmodule MarkdownServer.Renderer do
     MarkdownServer.RenderedDocument[body: body, title: title_for(body)]    
   end
 
+  def render(file_path) do
+    {:ok, string} = File.read(file_path)
+    string |> render_string 
+  end
+
   defp title_matcher do
     %r/<h1>(?<title>.*)<\/h1>/g
   end
