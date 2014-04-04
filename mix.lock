@@ -1,5 +1,6 @@
 [ "cowboy": {:git, "git://github.com/extend/cowboy.git", "05024529679d1d0203b8dcd6e2932cc2a526d370", []},
   "cowlib": {:git, "git://github.com/extend/cowlib.git", "f58340a0044856bb508df03cfe94cf79308380a2", [ref: "0.6.1"]},
+  "eml": {:git, "git://github.com/zambal/eml.git", "bccf027284a622359e252721abf6b44dfd24dddf", []},
   "ets_lru": {:git, "https://github.com/cloudant/ets_lru.git", "54df566f02412595f69500ce2326d31cfa55ae7a", [ref: "master"]},
   "ex_conf": {:git, "git://github.com/phoenixframework/ex_conf.git", "e6309e223d55a0dd6be63860ae8af5e0f021c11d", []},
   "ex_doc": {:git, "git://github.com/elixir-lang/ex_doc.git", "c14203bfca186f68ff178e5ada9af4f5fb37e205", []},
